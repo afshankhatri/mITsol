@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 
 export interface ServiceFaq {
-  q: string;
+  q: string; 
   a: string;
 }
 

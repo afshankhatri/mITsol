@@ -95,7 +95,7 @@ export default function ServiceDetailPage() {
                   </div>
               </div>
             </div>
-
+ 
             <div className="lg:col-span-5">
               <div className={`relative overflow-hidden rounded-3xl bg-gradient-to-br ${service.accent} p-8 shadow-2xl`}>
                 <div className="pointer-events-none absolute inset-0 bg-grid-dark opacity-20" />

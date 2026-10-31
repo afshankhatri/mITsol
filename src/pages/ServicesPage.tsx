@@ -32,7 +32,7 @@ export default function ServicesPage() {
       "@type": "GeoCoordinates",
       "latitude": 18.960719632233328,
       "longitude": 72.83416793880511
-    },
+    }, 
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [

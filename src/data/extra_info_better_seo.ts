@@ -80,7 +80,7 @@ export interface SEOPage {
 }
 
 export const seoPages: SEOPage[] = [
-    {
+    { 
         slug: "buy-old-laptop",
         title: "Buy Old Laptop",
         shortTitle: "Buy Laptop",
