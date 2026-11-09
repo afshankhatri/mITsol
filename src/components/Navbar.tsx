@@ -9,6 +9,7 @@ const mainLinks = [
   { to: '/', label: 'Home' },
   { to: '/about/', label: 'About' },
   { to: '/services/', label: 'Services' },
+  { to: '/blog/', label: 'Blog' },
   { to: '/testimonials/', label: 'Reviews' },
   { to: '/faq/', label: 'FAQ' },
   { to: '/locations/', label: 'Locations' },

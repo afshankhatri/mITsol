@@ -13,7 +13,7 @@ export default function LocationsPage() {
     "@type": "LocalBusiness",
     "@id": "https://www.meridianinfotechsolutions.in/#business",
     "name": "Meridian InfoTech Solutions",
-    "description": "Meridian InfoTech Solutions is an established computer and IT maintenance service provider with over a decade of experience. We serve individuals and businesses with comprehensive IT services — from laptop and computer repair to AMC contracts, refurbished device sales, and responsible e-waste management.",
+    "description": "Meridian InfoTech Solutions is an established computer and IT maintenance service provider with over a Period of 8+ Years of experience. We serve individuals and businesses with comprehensive IT services — from laptop and computer repair to AMC contracts, refurbished device sales, and responsible e-waste management.",
     "url": "https://www.meridianinfotechsolutions.in/",
     "logo": "https://www.meridianinfotechsolutions.in/logo.webp/",
     "image": "https://www.meridianinfotechsolutions.in/logo.webp",

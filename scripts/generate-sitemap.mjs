@@ -8,6 +8,7 @@ const PUBLIC_SITEMAP_PATH = path.join(ROOT_DIR, 'public', 'sitemap.xml');
 const ROUTES_PATH = path.join(ROOT_DIR, 'src', 'lib', 'routes.ts');
 const SERVICES_PATH = path.join(ROOT_DIR, 'src', 'data', 'services.ts');
 const LOCATIONS_PATH = path.join(ROOT_DIR, 'src', 'data', 'locations.ts');
+const BLOGS_PATH = path.join(ROOT_DIR, 'src', 'data', 'blog.ts');
 
 const SITE_ORIGIN = 'https://www.meridianinfotechsolutions.in';
 
@@ -35,13 +36,14 @@ function extractSlugs(source) {
   return [...source.matchAll(/slug:\s*'([^']+)'/g)].map((match) => match[1]);
 }
 
-function getRoutes(routesSource, servicesSource, locationsSource) {
+function getRoutes(routesSource, servicesSource, locationsSource, blogsSource) {
   const staticRoutes = extractArrayValues(routesSource, 'staticRoutes');
   const extraRoutes = extractArrayValues(routesSource, 'extraRoutes');
   const serviceRoutes = extractSlugs(servicesSource).map((slug) => `/services/${slug}/`);
   const locationRoutes = extractSlugs(locationsSource).map((slug) => `/locations/${slug}/`);
+  const blogRoutes = extractSlugs(blogsSource).map((slug) => `/blog/${slug}/`);
 
-  return [...new Set([...staticRoutes, ...serviceRoutes, ...locationRoutes, ...extraRoutes])]
+  return [...new Set([...staticRoutes, ...serviceRoutes, ...locationRoutes, ...blogRoutes, ...extraRoutes])]
     .map((route) => route === '/' ? route : `${route.replace(/\/+$/, '')}/`);
 }
 
@@ -75,13 +77,14 @@ function createSitemapXml(routes, existingXml) {
 }
 
 async function run() {
-  const [routesSource, servicesSource, locationsSource, existingXml] = await Promise.all([
+  const [routesSource, servicesSource, locationsSource, blogsSource, existingXml] = await Promise.all([
     fs.readFile(ROUTES_PATH, 'utf8'),
     fs.readFile(SERVICES_PATH, 'utf8'),
     fs.readFile(LOCATIONS_PATH, 'utf8'),
+    fs.readFile(BLOGS_PATH, 'utf8'),
     fs.readFile(GENERATED_SITEMAP_PATH, 'utf8'),
   ]);
-  const routes = getRoutes(routesSource, servicesSource, locationsSource);
+  const routes = getRoutes(routesSource, servicesSource, locationsSource, blogsSource);
   const sitemapXml = createSitemapXml(routes, existingXml);
 
   await fs.writeFile(GENERATED_SITEMAP_PATH, sitemapXml);
@@ -91,6 +94,7 @@ async function run() {
   console.log(`  Static: ${extractArrayValues(routesSource, 'staticRoutes').length}`);
   console.log(`  Services: ${extractSlugs(servicesSource).length}`);
   console.log(`  Locations: ${extractSlugs(locationsSource).length}`);
+  console.log(`  Blogs: ${extractSlugs(blogsSource).length}`);
   console.log(`  Specialized: ${extractArrayValues(routesSource, 'extraRoutes').length}`);
 }
 

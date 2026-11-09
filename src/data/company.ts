@@ -3,7 +3,7 @@ export const companyInfo = {
   shortName: 'Meridian',
   tagline: 'IT maintenance, repair, and solutions you can trust',
   description:
-    'Meridian InfoTech Solutions is an established computer and IT maintenance service provider with over a decade of experience. We serve individuals and businesses with comprehensive IT services — from laptop and computer repair to AMC contracts, refurbished device sales, and responsible e-waste management.',
+    'Meridian InfoTech Solutions is an established computer and IT maintenance service provider with over a Period of 8+ Years of experience. We serve individuals and businesses with comprehensive IT services — from laptop and computer repair to AMC contracts, refurbished device sales, and responsible e-waste management.',
   foundedYear: 2018,
   phones: [
     {
@@ -45,7 +45,7 @@ export const values = [
   {
     title: 'Trust Built Over Time',
     description:
-      'For over a decade, we have earned our reputation one repair, one contract, and one satisfied customer at a time.',
+      'For over a Period of 8+ Years, we have earned our reputation one repair, one contract, and one satisfied customer at a time.',
     icon: 'ShieldCheck',
   },
   {

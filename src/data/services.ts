@@ -73,7 +73,7 @@ export const services: Service[] = [
       'Genuine and certified replacement parts',
       'Most repairs completed within 24–48 hours',
       'Transparent pricing with no hidden charges',
-      'Decade of experience across all laptop brands',
+      '8+ Years of experience across all laptop brands',
     ],
     faqs: [
       {

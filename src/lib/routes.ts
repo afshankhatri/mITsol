@@ -1,10 +1,12 @@
 import { services } from '@/data/services';
 import { locations } from '@/data/locations';
+import { blogs } from '@/data/blog';
 
 export const staticRoutes = [
   '/',
   '/about/',
   '/services/',
+  '/blog/',
   '/testimonials/',
   '/faq/',
   '/contact/',
@@ -14,6 +16,7 @@ export const staticRoutes = [
 
 export const dynamicServiceRoutes = services.map(s => `/services/${s.slug}/`);
 export const dynamicLocationRoutes = locations.map(l => `/locations/${l.slug}/`);
+export const dynamicBlogRoutes = blogs.map(blog => `/blog/${blog.slug}/`);
 
 export const extraRoutes = [
   '/buy-old-laptop/',
@@ -44,5 +47,6 @@ export const allRoutes = [
   ...staticRoutes,
   ...dynamicServiceRoutes,
   ...dynamicLocationRoutes,
+  ...dynamicBlogRoutes,
   ...extraRoutes,
 ];

@@ -113,6 +113,7 @@ export function Footer() {
               {[
                 { to: '/about/', label: 'About Us' },
                 { to: '/locations/', label: 'Locations' },
+                { to: '/blog/', label: 'Blog' },
                 { to: '/testimonials/', label: 'Reviews' },
                 { to: '/faq/', label: 'FAQ' },
                 { to: '/contact/', label: 'Contact' },

@@ -16,7 +16,7 @@ export function StatsCenterpiece() {
             A track record built on trust
           </h2>
           <p className="mt-3 text-pretty text-sm text-ink-500 dark:text-ink-400 sm:text-base">
-            Numbers that reflect over a decade of dedicated IT service.
+            Numbers that reflect over a Period of 8+ Years of dedicated IT service.
           </p>
         </div>
 

@@ -9,7 +9,7 @@ const values = [
     icon: 'ShieldCheck',
     title: 'Trust Built Over Time',
     description:
-      'For over a decade, we have earned our reputation one repair, one contract, and one satisfied customer at a time.',
+      'For over a Period of 8+ Years, we have earned our reputation one repair, one contract, and one satisfied customer at a time.',
   },
   {
     icon: 'Eye',

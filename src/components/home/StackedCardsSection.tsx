@@ -14,7 +14,7 @@ interface CardData {
 const cards: CardData[] = [
   {
     icon: ShieldCheck,
-    title: 'Trust Built Over a Decade',
+    title: 'Trust Built Over a Period of 8+ Years',
     description:
       'Since 2018, we have been the IT partner that businesses and individuals rely on. Over 8,500 devices repaired and 320+ businesses on active maintenance contracts — our track record speaks for itself.',
     stat: '8+',

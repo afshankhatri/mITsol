@@ -9,7 +9,7 @@ import { companyInfo, stats } from '@/data/company';
 const iconMap: Record<string, LucideIcon> = { ShieldCheck, Eye, Wrench, Recycle };
 
 const values = [
-  { icon: 'ShieldCheck', title: 'Trust Built Over Time', description: 'For over a decade, we have earned our reputation one repair, one contract, and one satisfied customer at a time.' },
+  { icon: 'ShieldCheck', title: 'Trust Built Over Time', description: 'For over a Period of 8+ Years, we have earned our reputation one repair, one contract, and one satisfied customer at a time.' },
   { icon: 'Eye', title: 'Transparent Always', description: 'No hidden charges, no unnecessary upsells. We tell you exactly what is wrong, what it costs, and what your options are.' },
   { icon: 'Wrench', title: 'Expertise Across the Board', description: 'From a cracked iPhone screen to a 60-workstation AMC, our certified technicians handle it all with equal care.' },
   { icon: 'Recycle', title: 'Responsible & Sustainable', description: 'We extend the life of your devices and recycle what cannot be saved — because good IT is also responsible IT.' },
@@ -28,7 +28,7 @@ export default function AboutPage() {
     "@type": "LocalBusiness",
     "@id": "https://www.meridianinfotechsolutions.in/#business",
     "name": "Meridian InfoTech Solutions",
-    "description": "Meridian InfoTech Solutions is an established computer and IT maintenance service provider with over a decade of experience. We serve individuals and businesses with comprehensive IT services — from laptop and computer repair to AMC contracts, refurbished device sales, and responsible e-waste management.",
+    "description": "Meridian InfoTech Solutions is an established computer and IT maintenance service provider with over a Period of 8+ Years of experience. We serve individuals and businesses with comprehensive IT services — from laptop and computer repair to AMC contracts, refurbished device sales, and responsible e-waste management.",
     "url": "https://www.meridianinfotechsolutions.in/",
     "logo": "https://www.meridianinfotechsolutions.in/logo.webp/",
     "image": "https://www.meridianinfotechsolutions.in/logo.webp/",
@@ -87,7 +87,7 @@ export default function AboutPage() {
     <>
       <Seo
         title="About Us — Established IT Service Provider Since 2018"
-        description={`Learn about ${companyInfo.name} — an established IT maintenance and repair company serving individuals and businesses for over a decade.`}
+        description={`Learn about ${companyInfo.name} — an established IT maintenance and repair company serving individuals and businesses for over a Period of 8+ Years.`}
         canonicalPath="/about/"
         jsonLd={jsonLd}
       />
@@ -105,7 +105,7 @@ export default function AboutPage() {
           <div className="lg:col-span-7">
             <p className="section-label">Our Story</p>
             <h2 className="mt-2 text-balance font-display text-2xl font-700 text-ink-900 dark:text-ink-50 sm:text-3xl">
-              A decade of keeping technology running
+              8+ Years of keeping technology running
             </h2>
             <div className="mt-5 space-y-4 text-sm leading-relaxed text-ink-600 dark:text-ink-300 sm:text-base">
               <p>

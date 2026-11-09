@@ -39,6 +39,10 @@ export const sitemapSections: SitemapSection[] = [
         "to": "/services/"
       },
       {
+        "label": "Blog",
+        "to": "/blog/"
+      },
+      {
         "label": "Testimonials",
         "to": "/testimonials/"
       },
